@@ -1,0 +1,81 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* GLOBAL CLASSES */
+.row {
+  display: flex;
+}
+
+.v-center {
+  align-items: center;
+}
+
+.h-center {
+  justify-content: center;
+}
+
+.split {
+  justify-content: space-between;
+}
+
+.content {
+  width: 90%;
+  margin: 45px auto 0;
+}
+
+/* CUSTOM CLASSES */
+header {
+  background: #555;
+  color: #fff;
+  padding: 7px 5%;
+}
+
+header a:not(:last-child) {
+  margin-right: 7px;
+}
+
+.image {
+  max-width: 400px;
+}
+
+.text {
+  text-align: center;
+  max-width: 500px;
+  padding: 0 25px;
+}
+
+.text h2 {
+  margin-bottom: 15px;
+}
+
+.text p {
+  line-height: 1.5;
+}
+
+
+@media (max-width: 925px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 600px;
+  }
+}
